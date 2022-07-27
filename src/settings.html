@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/settings.css" type="text/css">
+        <title>Daily Launcher / Settings</title>
+    </head>
+
+    <body style="background-color: transparent;">
+        <div class="main">
+            <h1 id="title">Настройки лаунчера</h1>
+
+            <div id="btn-close"></div>
+
+            <p id="memory" onload="updateMemory()">Оперативная память, выделенная под игру<br>
+                Текущее значение: <span id="now_memory" style="font-family: Proxima Nova Sm; color: #fff;">1024MB</span>
+            </p>
+            <div class="memory-box">
+                <button onclick="setMemory(1024);" class="btn-memory">1024MB</button>
+                <button onclick="setMemory(1536);" class="btn-memory">1536MB</button>
+                <button onclick="setMemory(2048);" class="btn-memory">2048MB</button>
+<!--                 <p class="memory-value" id="min">1024 Mb</p>
+                <input type="range" min=1024 max=2048 step=128 class="range" onchange="updateMemory()" oninput="updateMemory()">
+                <p class="memory-value" id="max">2048 Mb</p> -->
+            </div>
+            <div class="path-box">
+                <p id="path-text">Путь к файлам игры:</p>
+                <div id="path"></div>
+            </div>
+        </div>
+    </body>
+
+    <!--6acb5be25defbb225341fba24bd52f9dff0208311d0f45be84f4928c68a71ed3697225288aed4ff9da71c-->
+    
+    <script src="js/settings.js"></script>
+</html>

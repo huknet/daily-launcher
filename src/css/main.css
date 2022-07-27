@@ -1,0 +1,173 @@
+body {
+    font-family: Proxima Nova Sm;
+    /*background: #000000ad;*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 950px;
+    height: 580px;    
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.buttons {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.button {
+    float: right;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.button#button-hide {
+    height: 30px;
+    width: 30px;
+    border-radius: 0px;
+    background: url('../img/button_hide.png') no-repeat center;
+    background-color: transparent;
+    background-size: 17px;
+    margin-top: 35px;
+    /*margin-right: 45px;*/
+    transition: 0.7s;   
+}
+
+.button#button-close {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    border-radius: 0px;
+    background: url('../img/button_close.png') no-repeat center;
+    background-color: transparent;
+    background-size: 17px;
+    margin-top: 35px;
+    /*margin-right: 45px;*/
+    transition: 0.7s;
+}
+
+#button-setting {
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+    border-radius: 7px;
+    background: url('../img/button_settings.png') no-repeat center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border:  1px solid rgba(255, 255, 255, 0.2); 
+    background-size: 17px;
+    margin-top: 30px;
+    /*margin-right: 45px;*/
+    transition: 0.7s;  
+}
+
+#logo {
+    /*vertical-align: middle;*/
+    /*float: left;*/
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 110px;
+    background: url('../img/logo.png'); 
+    background-repeat: no-repeat;
+    background-size: 60px;
+    margin: auto;
+    margin-right: 80px;
+
+    /*margin-left: auto;*/
+    /*background-position: center;*/
+    /*margin-top: 10px;*/
+    /*-webkit-app-region: no-drag;*/
+}
+
+.container {
+    /*padding: 45px 50px;*/
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /*align-content: center;*/
+    padding: 15px 50px;
+}
+
+.left_icons {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.icon#vkontakte {
+    background: url('../img/vkontakte.png') no-repeat center;
+}
+
+.icon#telegram {
+    background: url('../img/telegram.png') no-repeat center;
+}
+
+.icon#discord {
+    background: url('../img/discord.png') no-repeat center;
+}
+
+.name {
+/*    float: left;
+    width: 60px;
+    height: 75px;
+    -webkit-app-region: no-drag;*/
+    /*width: 10px;*/
+/*    width: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center
+    justify-content: flex-start;*/
+/*    float: left;
+    width: 0px;*/
+    width: 150px;
+}
+
+input#playername {
+    height: 40px;
+    width: 200px;
+    /*margin-right: 0px;*/
+    outline: none;
+    border-style: none;
+    text-align: center;
+    font-family: 'Proxima Nova Sm';
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border:  1px solid rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    font-size: 15px;
+    transition: 0.7s;
+}
+
+input#playername::placeholder {
+    color: #fffC;
+}
+
+#notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.hidden {
+  display: none;
+}

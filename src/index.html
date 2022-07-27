@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" href="./css/main.css">
+    	<link rel="stylesheet" href="./css/fonts.css">
+    	<title>Daily Launcher</title>
+  	</head>
+  	<body>
+    	<div class="main" style="background-color: #fff;">
+    		<div class="container">
+
+    			<div class="header">
+    				<div class="left_icons">
+    					<div class="icon" id="vkontakte"></div>
+    					<div class="icon" id="telegram"></div>
+    					<div class="icon" id="discord"></div>
+    				</div>
+    				<div id="logo"></div>
+    				<div class="name">
+    					<input type="text" id="playername" placeholder="Логин"> 
+    				</div>	
+					<div class="buttons">
+						<div class="button" id="button-close"></div>
+						<div class="button" id="button-hide"></div>
+		          		<div class="button" id="button-setting"></div>
+		          	</div>    					          					
+    			</div>	
+    			<p id="version"></p>
+    		</div>			
+    	</div>	
+		<div id="notification" class="hidden">
+		  <p id="message"></p>
+		  <button id="close-button" onClick="closeNotification()">
+		    Close
+		  </button>
+		  <button id="restart-button" onClick="restartApp()" class="hidden">
+		    Restart
+		  </button>
+		</div>        	
+  	</body>
+  	<script crossorigin src="js/app.js"></script>
+</html>

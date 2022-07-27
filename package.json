@@ -1,0 +1,31 @@
+{
+  "name": "daily",
+  "productName": "Daily Game Launcher",
+  "version": "0.0.0",
+  "description": "Daily Launcher by huknet (t.me/huknet)",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "add": "^2.0.6",
+    "electron": "^19.0.9",
+    "electron-builder": "^23.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "0.0.1-security",
+    "update-electron-app": "^2.0.1",
+    "electron-updater": "^5.0.5"
+  },
+  "dependencies": {
+    "electron-updater": "^5.0.5",
+    "fs": "0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": " git@github.com:huknet/daily-launcher.git"
+  },
+  "author": ""
+}
